@@ -1,0 +1,349 @@
+/* Nav menu  */
+* {
+    margin: 0;
+    padding: 0;
+}
+.headerpage1 {
+    width: 100%;
+    height: 70px;
+    background-color: grey;
+    padding: 0, 20px;
+}
+
+.headerpage1 h2 {
+    line-height: 70px;
+    float: left;
+    text-transform: uppercase;
+    color: white;
+}
+
+.headerpage1 .menu {
+    list-style: none;
+    /* float: right; */
+}
+
+.menu li {
+    display: inline-block;
+    line-height: 70px;
+
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0 20px;
+    margin-right: 60px;
+    transition: .4s;
+    color: white;
+}
+
+.show-btn,
+.hide-btn {
+    font-size: 30px;
+    color: white;
+    line-height: 70px;
+    margin: 0px 15px;
+    display: none;
+}
+
+.show-btn {
+    float: right;
+}
+
+#chk {
+    position: absolute;
+    visibility: hidden;
+    z-index: -10;
+}
+
+.section1 {
+    font-size: 80px;
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    margin-top: 35vh;
+    /* margin-left: 7vw; */
+    color: black;
+}
+
+.page1btn {
+    font-size: 40px;
+    background-color: pink;
+
+}
+
+@media (max-width: 980px) {
+    .section1 {
+        font-size: 50px;
+        font-family: 'Bangers', cursive;
+        text-align: center;
+        margin-top: 35vh;
+        /* margin-left: 7vw; */
+        color: black;
+    }
+
+    .show-btn,
+    .hide-btn {
+        display: block;
+    }
+
+    .menu li {
+        display: block;
+        padding: 20px 0;
+    }
+
+    .li a {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100vh;
+        background-color: black;
+        text-align: center;
+        transition: .7s;
+        line-height: normal;
+    }
+
+    .hide-btn {
+        position: absolute;
+        right: 5px;
+        top: 10px;
+    }
+
+    #chk:checked~.menu {
+        right: 0;
+    }
+}
+
+
+
+/* section  */
+.page1{
+    width: 100%;
+    height: 90vh;
+    background-image: url(background_FullStack.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    color: whitesmoke;
+}
+
+
+/* team  */
+.team{
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+}
+/* .Team_members{
+    margin: auto;
+    width: 23%;
+    height: 35vh;
+    border-radius: 50%;
+} */
+.Team_members {
+    width: 23%;
+    height: 35vh;
+    border-radius: 50%;
+    margin:auto;
+
+}
+@media screen and (max-width: 1650px) {
+    .Team_members {
+        width: 20%;
+        height: 30vh;
+        margin: 2vh 2vw;
+    }
+}
+
+@media screen and (max-width: 1410px) {
+    .Team_members {
+        width: 20%;
+        height: 20vh;
+        margin: 2vh 2vw;
+
+    }
+
+}
+
+@media screen and (max-width: 1250px) {
+    .Team_members {
+        width: 37%;
+        height: 29vh;
+        margin: 0vh 6vw;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .Team_members {
+        width: 38%;
+        height: 30vh;
+        margin: 0vh 5vw;
+
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .Team_members {
+        width: 38%;
+        height: 27vh;
+        margin: 0vh 5vw;
+
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .Team_members {
+        width: 44%;
+        height: 20vh;
+        margin: 0vh 2vw;
+
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .Team_members {
+        width: 44%;
+        height: 23vh;
+        margin: 0vh 1vw;
+
+    }
+}
+
+/* About */
+
+.about{
+    display: flex;
+    overflow: auto;
+    box-sizing: border-box;
+    flex-flow: row wrap;
+}
+.about_project{
+    border: 3px solid black;
+    background-color: gray;
+    width: 45%;
+    height: 52vh;
+    overflow: auto;
+    box-sizing: border-box;
+    margin-left: 2vw;
+}
+.project{
+    width: 45%;
+    height: 54vh;
+    overflow: auto;
+    box-sizing: border-box;
+    margin-left: 2vw;
+
+}
+.project-1{
+    background-image: url(p1.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 3px solid black;
+    width: 98%;
+    height: 16vh;
+    /* margin-left: 3%; */
+    /* float: right; */
+}
+.project-2{
+    background-image: url(p2.jpeg);
+    background-position: center;
+    background-size: cover;
+    border: 3px solid black;
+    width: 98%;
+    height: 16vh;
+    margin-top: 1vh;
+}
+.project-3{
+    background-image: url(p3.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 3px solid black;
+    width: 98%;
+    height: 16vh;
+    margin-top: 1vh;
+}
+
+@media screen and (max-width: 800px) {
+    .project,.about_project{
+        width: 800px;
+    }
+    .project-1{
+        margin-top: 1vh;
+    }
+    
+}
+.technologies{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow:row wrap;
+    justify-items: center;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+
+.box {
+    display: block;
+    /* float: left; */
+    background-color: rgb(180, 178, 178);
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 22%;
+    margin-left: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+.box img{
+        width: 90%;
+        padding: 5px 15px;
+        border-radius: 5px;
+        
+    
+
+}
+.IM {
+    width: 100%;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    /* padding: 5px 105px; */
+    text-decoration: none;
+    /* margin: 10px 20px; */
+    margin:auto;
+    margin-bottom: 1vh;
+
+}
+
+.IM:hover {
+    background-color: blue;
+}
+@media screen and (max-width: 880px) {
+    .box{
+        width: 300px;
+        margin: auto;
+        margin-top: 1vh;
+    }
+    
+}
+@media screen and (max-width: 620px) {
+    .box{
+        width: 250px;
+        margin: auto;
+        margin-top: 1vh;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .box{
+        width: 450px;
+        margin: auto;
+        margin-top: 1vh;
+    }
+    
+}

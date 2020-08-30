@@ -1,1 +1,9 @@
-# FullStack-Practical-6
+# FullStack-Practical-1
+# FullStack-Practical-2
+# FullStack-Practical-2
+# FullStack-Practical-3
+# FullStack-Practical-4
+# FullStack-Practical-5
+# FullStack-Practical-7
+# FullStack-Practical-8
+# FullStack-Practical-9
